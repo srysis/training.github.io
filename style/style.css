@@ -12,7 +12,7 @@ button {
 }
 button.more, button#about_button {
 	border: 0;
-	padding: 3% 10%;
+	padding: 2% 10%;
 	font-weight: bold;
 }
 button.more {
@@ -41,7 +41,7 @@ h2 {
 
 header {
 	color: white;
-	height: 754px;
+	height: 105vh;
 	background-image: url("../files/header/background.png");
 	background-size: cover;
 }
@@ -70,13 +70,13 @@ header {
 #header_nav > ul > li > a:hover {
 	color: #ddd;
 }
-header > #title {
+#header_title {
 	display: inline-block;
 	position: relative;
 	left: 20%;
 	top: 25%;
 }
-header > #title > h1 {
+#header_title > h1 {
 	font-size: 4.5em;
 	line-height: 1;
 	margin-block-start: 0;
@@ -107,7 +107,7 @@ button#about_button {
 	width: 50%;
 }
 #about_corona > .flex_container > .image > img {
-	height: 400px;
+	height: 45vh;
 }
 .text_and_button > h3 {
 	margin-block-start: 0;
@@ -151,7 +151,7 @@ button#about_button {
 #protection {
 	margin-bottom: 80px;
 }
-#protection > h2, #protection > p {
+#protection_title {
 	text-align: center;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -160,6 +160,7 @@ button#about_button {
 	background-image: url("../files/protect.png");
 	background-size: cover;
 	background-position: 40% 0;
+	background-repeat: no-repeat;
 	width: 90%;
 	height: 90vh;
 	margin: 2% auto;
