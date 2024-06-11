@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<nav id = "header_nav">
+		<!-- <nav id = "header_nav">
 			<div id = "search">
 				<p>S</p>
 			</div>
@@ -28,13 +28,15 @@
 			<div id = "user">
 				<p>U</p>
 			</div>
-		</nav>
-		<div id = "title">
+		</nav> -->
+		<div id = "header_title">
 			<h1>Care early</h1>
 			<h1>Coronavirus</h1>
 			<br><br>
-			<button class="more red">Read More</button>
-			<button id="about_button">About us</button>
+			<div class="flex_container">
+				<button class="more red">Read More</button>
+				<button id="about_button">About us</button>
+			</div>
 		</div>
 	</header>
 	<section id="about_corona">
@@ -65,42 +67,62 @@
 		</div>
 	</section>
 	<section id="protection">
-		<h2>HOW TO PROTECT YOURSELF</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat mauris vitae posuere faucibus.</p>
+		<div id="protection_title">
+			<h2>HOW TO PROTECT YOURSELF</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat mauris vitae posuere faucibus.</p>
+		</div>
 		<div id="protection_methods">
 			<div class="overlay"></div>
 			<div class="flex_container">
 				<div id="mask">
 					<div class="content">
-						<img src="files/protection/sick.png">
-						<h3>Wear Mask</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget luctus turpis. Aenean dignissim, tortor sed dapibus varius, turpis augue facilisis libero, vitae feugiat est enim quis magna. Aliquam et euismod quam.</p>
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/sick.png">
+							</div>
+							<div class="text_container">
+								<h3>Wear a Mask</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget luctus turpis. Aenean dignissim, tortor sed dapibus varius, turpis augue facilisis libero, vitae feugiat est enim quis magna. Aliquam et euismod quam.</p>
+							</div>
+						</div>
 					</div>
 					<br>
-					<button class="more blue">READ MORE</button>
+					<!-- <button class="more blue">READ MORE</button> -->
 				</div>
 				<div id="wash_hands">
 					<div class="content">
-						<img src="files/protection/hand-wash.png">
-						<h3>Wash Your Hands</h3>
-						<p>Curabitur egestas lectus a mauris suscipit mattis. Fusce nisi nisl, molestie ut elit a, elementum blandit ex. Pellentesque et orci urna. Ut aliquam sed lorem ut posuere. Integer luctus nisl sed justo scelerisque, sed eleifend turpis suscipit.</p>
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/hand-wash.png">
+							</div>
+							<div class="text_container">
+								<h3>Wash Your Hands</h3>
+								<p>Curabitur egestas lectus a mauris suscipit mattis. Fusce nisi nisl, molestie ut elit a, elementum blandit ex. Pellentesque et orci urna. Ut aliquam sed lorem ut posuere. Integer luctus nisl sed justo scelerisque, sed eleifend turpis suscipit.</p>
+							</div>
+						</div>
 					</div>
 					<br>
-					<button class="more red">READ MORE</button>
+					<!-- <button class="more red">READ MORE</button> -->
 				</div>
 				<div id="home">
 					<div class="content">
-						<img src="files/protection/real-estate.png">
-						<h3>Stay at Home</h3>
-						<p>Mauris suscipit libero erat. Nullam in erat pellentesque, accumsan sem quis, vestibulum nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer interdum eu lorem id finibus. Nunc a mauris ex.</p>
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/real-estate.png">
+							</div>
+							<div class="text_container">
+								<h3>Stay at Home</h3>
+								<p>Mauris suscipit libero erat. Nullam in erat pellentesque, accumsan sem quis, vestibulum nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer interdum eu lorem id finibus. Nunc a mauris ex.</p>
+							</div>
+						</div>
 					</div>
 					<br>
-					<button class="more blue">READ MORE</button>
+					<!-- <button class="more blue">READ MORE</button> -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="cases">
+	<!-- <section id="cases">
 		<h2>CORONAVIRUS CASES</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum tincidunt sodales. Donec eget augue sagittis, rutrum nisi eu, suscipit libero. Praesent a elit quis turpis lacinia tristique. Cras elit leo, posuere dignissim neque sit amet, viverra eleifend est.</p>
 		<div class="flex_container">
@@ -193,6 +215,6 @@
 				<img src="files/footer/map.png">
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 </body>
 </html>
