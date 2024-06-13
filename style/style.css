@@ -223,6 +223,7 @@ button.more.blue {
 #case_1 > .image_and_button, #case_2 > .image_and_button, #case_3 > .image_and_button {
 	height: 200px;
 	background-size: cover;
+	position: relative;
 }
 #case_1 > .image_and_button {
 	background-image: url("../files/cases/1.png");
@@ -257,8 +258,8 @@ button.more.blue {
 	padding-bottom: 60px;
 	text-align: center;
 }
-#doctors > .flex_container > .doctor {
-	height: 370px;
+.doctor {
+	height: auto;
 	margin: 10px 1%;
 	padding: 2% 4%;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -268,7 +269,7 @@ button.more.blue {
 	position: relative;
 	top: -75px;
 }
-.doctor > .content > h3 {
+.doctor > .content > .text_container > h3 {
 	font-size: 1.4em;
 }
 .doctor > .content:after {
@@ -284,6 +285,7 @@ button.more.blue {
 	background-image: url("../files/news_background.png");
 	background-repeat: no-repeat;
 	background-position: 30% 0;
+	background-size: cover;
 }
 #keep_updated > #form_container > form {
 	text-align: center;
@@ -310,6 +312,7 @@ button.more.blue {
 	padding: 20px 80px;
 	cursor: pointer;
 }
+
 
 footer {
 	background-color: black;

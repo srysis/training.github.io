@@ -1,6 +1,9 @@
 @media screen and (max-width: 400px) {
 	body {
-		background-color: #ccc;
+		background-image: url("../files/body_background.png");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	button.more, button#about_button {
 		padding: 10%;
@@ -10,6 +13,7 @@
 	}
 	section {
 		background-color: #fff;
+		position: relative;
 	}
 	h2 {
 		font-size: 2.2em;
@@ -18,6 +22,8 @@
 
 	header {
 		background-position: 50% 0%;
+		position: relative;
+		z-index: 2;
 	}
 	#header_title {
 		top: 33%;
@@ -47,24 +53,7 @@
 		border-radius: 0px;
 		padding: 6% 30px;
 		padding-top: 10%;
-		background-color: white;
 		box-shadow: none;
-	}
-	#about_corona:before {
-		content: '';
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.1;
-		background-image: url("../files/corona.png");
-		background-position: -10% 0;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 	.text_and_button > h3 {
 		margin-block-start: 0;
@@ -157,7 +146,66 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	.text_container {
+	.flex_container > .text_container {
 		width: 70%;
+	}
+
+
+	#cases {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#cases > h2 {
+		padding: 4% 0 0 0;
+	}
+	#cases > p {
+		width: 100%;
+		padding: 2%;
+	}
+	#cases > .flex_container {
+		flex-direction: column;
+	}
+	#case_1, #case_2, #case_3 {
+		width: 95%;
+		margin: auto;
+		margin-top: 5%;
+		box-shadow: none;
+	}
+	#case_3 {
+		padding-bottom: 0;
+	}
+	.image_and_button + .text_and_button {
+		margin-top: 0;
+	}
+	.image_and_button > button {
+		display: none;
+	}
+
+
+	#doctors {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#doctors > h2 {
+		padding-bottom: 0;
+		text-align: center;
+	}
+	#doctors > .flex_container {
+		flex-direction: column;
+	}
+	.doctor {
+		background-color: #fff;
+		box-shadow: none;
+	}
+	.doctor > .content {
+		position: static;
+	}
+	.doctor > .content:after {
+		display: none;
+	}
+
+
+	#keep_updated > #form_container {
+		position: relative; /* this is required to put the form above the body's background, so user can use the form as intended */
 	}
 }
