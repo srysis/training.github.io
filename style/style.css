@@ -192,9 +192,16 @@ button#about_button {
 	background-color: white;
 	color: black;
 }
-button.more.blue {
-	background-color: #05254d;
+div.content > .flex_container {
+	flex-direction: column;
 }
+.text_container > button.more.red, .text_container > button.more.blue {
+	display: none;
+}
+br + button.more {
+	padding: 5% 8%; 
+}
+
 
 
 #cases {
@@ -259,7 +266,7 @@ button.more.blue {
 	text-align: center;
 }
 .doctor {
-	height: auto;
+	height: 375px;
 	margin: 10px 1%;
 	padding: 2% 4%;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
