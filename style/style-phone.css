@@ -18,6 +18,9 @@
 	h2 {
 		font-size: 2.2em;
 	}
+	#header_nav {
+		display: none;
+	}
 
 
 	header {
@@ -96,14 +99,14 @@
 		margin-bottom: 10px;
 	}
 	#protection_title {
-		padding: 1% 10px;
+		padding-top: 15px;
 	}
 	#protection_title > h2 {
 		line-height: 1;
 	}
 	#protection_methods {
 		width: 100%;
-		height: 78vh;
+		height: 101vh;
 		border-radius: 0px;
 		background-image: none;
 		background-size: contain;
@@ -143,11 +146,21 @@
 		padding: 0 1%;
 	}
 	div.content > .flex_container {
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
 	.flex_container > .text_container {
 		width: 70%;
+		padding: 2% 0;
+	}
+	.text_container > button.more.red, .text_container > button.more.blue {
+		padding: 5% 7%;
+		display: block;
+		margin: auto;
+	}
+	br + button.more {
+		display: none;
 	}
 
 
@@ -156,7 +169,7 @@
 		margin-bottom: 10px;
 	}
 	#cases > h2 {
-		padding: 4% 0 0 0;
+		padding-top: 25px;
 	}
 	#cases > p {
 		width: 100%;
@@ -169,6 +182,7 @@
 		width: 95%;
 		margin: auto;
 		margin-top: 5%;
+		border: 3px solid black;
 		box-shadow: none;
 	}
 	#case_3 {
@@ -187,6 +201,7 @@
 		margin-bottom: 10px;
 	}
 	#doctors > h2 {
+		padding-top: 25px;
 		padding-bottom: 0;
 		text-align: center;
 	}
@@ -194,7 +209,9 @@
 		flex-direction: column;
 	}
 	.doctor {
+		height: auto;
 		background-color: #fff;
+		border: 3px solid black;
 		box-shadow: none;
 	}
 	.doctor > .content {
@@ -205,7 +222,26 @@
 	}
 
 
+	#keep_updated > h2 {
+		padding-top: 25px;
+	}
 	#keep_updated > #form_container {
 		position: relative; /* this is required to put the form above the body's background, so user can use the form as intended */
+	}
+
+
+	footer > .flex_container {
+		flex-direction: column;
+	}
+	#resources > p > a {
+		text-decoration: underline;
+		text-decoration-color: white;
+		text-decoration-thickness: 2px;
+	}
+	#about {
+		width: 100%;
+	}
+	#countries > img {
+		width: 70vw;
 	}
 }
