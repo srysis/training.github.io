@@ -9,9 +9,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/style-phone.css">
+	<script src="scripts/index.js" defer></script>
 </head>
 <body>
 	<header>
+		<button id="sidebar_menu"><img src="files/bars-solid.svg"></button>
 		<nav id = "header_nav">
 			<div id = "search">
 				<img src="files/magnifying-glass-solid.svg">
@@ -39,6 +41,23 @@
 			</div>
 		</div>
 	</header>
+	<aside class="hidden">
+		<div class="overlay"></div>
+		<div id="aside_content" class="hidden">
+			<input type="search" name="search" id="search_field" placeholder="Search on website">
+			<button id="search_button"><img src="files/magnifying-glass-solid.svg"></button>
+			<button id="login">LOG IN</button>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">TAKE ACTION</a></li>
+				<li><a href="#">CORONA</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">DOCTORS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+	</aside>
 	<section id="about_corona">
 		<div class="flex_container">
 			<div class="text_and_button">
