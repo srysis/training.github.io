@@ -64,8 +64,8 @@
 
 	aside {
 		display: block;
-		position: absolute;
-		z-index: 2;
+		position: fixed;
+		z-index: 3;
 		top: 0;
 		width: 100%;
 		height: 105vh;
