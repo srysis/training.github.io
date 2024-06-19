@@ -45,6 +45,9 @@ header {
 	background-image: url("../files/header/background.png");
 	background-size: cover;
 }
+button#sidebar_menu {
+	display: none;
+}
 #header_nav {
 	display: flex;
 	justify-content: space-between;
@@ -90,6 +93,11 @@ header {
 button#about_button {
 	color: #00132b;
 	margin-left: 3%;
+}
+
+
+aside {
+	display: none;
 }
 
 
