@@ -17,6 +17,6 @@ sidebar_activation_button.addEventListener('click', function() {
 });
 
 
-aside.addEventListener('click', function() {
+aside.addEventListener('touchstart', function() {
 	if ((event.target.tagName == 'DIV') && (event.target.className == 'overlay')) toggleAside();
 });
